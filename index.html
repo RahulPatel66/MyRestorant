@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/resturant.png">
+    <title>My Resturant</title>
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!--Get your own code at fontawesome.com-->
+    <!-- swiper file  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <!-- aos cdn link  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- external css  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- jquery cdn link  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+       .important{
+        background-color: blue;
+        color: white;
+     }
+    
+    </style>
+
+</head>
+
+<body>
+    <!-- navigation section start here  -->
+    <script>
+        $(document).ready(function(){
+            $("#h").addClass("important");
+
+            $("#h").click(function()
+                {       
+                    $("#h").addClass("important");
+                    $("#a").removeClass("important");
+                    $("#o").removeClass("important");
+                    $("#ch").removeClass("important");
+                    $("#f").removeClass("important");
+                    $("#c").removeClass("important");
+
+                });
+             $("#a").click(function()
+            {       
+                    $("#a").addClass("important");
+                    $("#h").removeClass("important");
+                    $("#o").removeClass("important");
+                    $("#ch").removeClass("important");
+                    $("#f").removeClass("important");
+                    $("#c").removeClass("important");
+                });
+                $("#o").click(function()
+            {       
+                    $("#a").removeClass("important");
+                    $("#h").removeClass("important");
+                    $("#o").addClass("important");
+                    $("#ch").removeClass("important");
+                    $("#f").removeClass("important");
+                    $("#c").removeClass("important");
+                });
+                $("#ch").click(function()
+                 {       
+                    $("#a").removeClass("important");
+                    $("#h").removeClass("important");
+                    $("#o").removeClass("important");
+                    $("#ch").addClass("important");
+                    $("#f").removeClass("important");
+                    $("#c").removeClass("important");
+                });
+                $("#f").click(function()
+                 {       
+                    $("#a").removeClass("important");
+                    $("#h").removeClass("important");
+                    $("#o").removeClass("important");
+                    $("#ch").removeClass("important");
+                    $("#f").addClass("important");
+                    $("#c").removeClass("important");
+                });
+                $("#c").click(function()
+                 {       
+                    $("#a").removeClass("important");
+                    $("#h").removeClass("important");
+                    $("#o").removeClass("important");
+                    $("#ch").removeClass("important");
+                    $("#f").removeClass("important");
+                    $("#c").addClass("important");
+                });
+        });
+    </script>
+    
+        <div id="navigation">
+            <div class="nav-item1">
+                <a href="#"><i class="fas fa-utensils"></i><span>M</span>y Resturant</a>
+            </div>
+            <div class="nav-item2" id="nav-item2">
+                <i class="fa fa-close" id="close"></i>
+                <div><a href="#home" id="h">Home</a></div>
+                <div><a href="#about" id="a">About</a></div>
+                <div><a href="#menu" id="o">Our-Menu</a></div>
+                <div><a href="#chef" id="ch">Our-Chefs</a></div>
+                <div><a href="#feedback" id="f">FeedBack</a></div>
+                <div><a href="#contact" id="c">Contact</a></div>
+            </div>
+            <div class="nav-item3">
+                <div><i class="fa fa-search" id="search-btn"></i></div>
+                <div><i class="fa fa-bars" id="menu-btn"></i></div>
+            </div>
+        </div>
+   
+   
+   
+    <!-- navigation section end here  -->
+
+    <!-- search section start here  -->
+
+    <section id="search">
+        <form action="">
+            <input type="text" id="text" placeholder="Enter Text Here "> <i class="fa fa-search"></i>
+        </form>
+    </section>
+
+
+    <!-- search section end here  -->
+
+
+    <!-- home section start from here  -->
+
+    <section id="home">
+
+        <div class="swiper">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide"><img src="./images/home-1.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/home-2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/home-3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/home-4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="./images/home-5.jpg" alt=""></div>
+                <!-- ... -->
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev" id="btn"></div>
+            <div class="swiper-button-next" id="btn"></div>
+
+            <!-- If we need scrollbar
+            <div class="swiper-scrollbar"></div> -->
+        </div>
+
+    </section>
+
+    <!-- home section end from here  -->
+
+    <!-- about us section start from here  -->
+
+    <section id="about">
+        <div class="heading">
+            <h1 data-aos="fade-up">ABOUT<span>US</span></h1>
+        </div>
+
+        <div class="container">
+            <div class="contant" data-aos="fade-left">
+                <h1>Welcome To My Resturant</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo iste laboriosam nemo provident dicta,
+                    dolorem quisquam sint dignissimos debitis illo.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore porro et consequuntur rerum. Numquam
+                    aut beatae natus ipsam quod fugiat suscipit, atque voluptatem laborum voluptatum obcaecati
+                    distinctio nulla expedita sint!</p>
+                <a href="#">Read More About</a>
+            </div>
+            <div class="vid" data-aos="fade-right">
+
+                <!-- <video src="./images/resturant-video.mp4" width="90%" height="30rem"  autoplay loop4> -->
+                <video width="90%" height="30rem" autoplay loop>
+                    <source src="./images/resturant-video.mp4" type="video/mp4">
+                    <source src="./images/resturant-video.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+
+                </video>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- about us section end from here  -->
+
+    <!-- menu section start from here  -->
+
+
+    <!-- menu section jquery code  -->
+    <script>
+        $(document).ready(function () {
+            $("#btn1").css("color", "orange");
+            $(".lunch").show();
+            $(".dinner").hide();
+            $(".drink").hide();
+            $(".dessert").hide();
+            $("#btn1").click(function () {
+                $("#btn1").css("color", "orange");
+                $("#btn2").css("color", "white");
+                $("#btn3").css("color", "white");
+                $("#btn4").css("color", "white");
+                $(".lunch").show();
+                $(".dinner").hide();
+                $(".drink").hide();
+                $(".dessert").hide();
+
+            });
+            $("#btn2").click(function () {
+                $("#btn1").css("color", "white");
+                $("#btn2").css("color", "orange");
+                $("#btn3").css("color", "white");
+                $("#btn4").css("color", "white");
+                $(".lunch").hide();
+                $(".dinner").show();
+                $(".drink").hide();
+                $(".dessert").hide();
+
+            });
+            $("#btn3").click(function () {
+                $("#btn1").css("color", "white");
+                $("#btn2").css("color", "white");
+                $("#btn3").css("color", "orange");
+                $("#btn4").css("color", "white");
+                $(".lunch").hide();
+                $(".dinner").hide();
+                $(".drink").show();
+                $(".dessert").hide();
+
+            });
+            $("#btn4").click(function () {
+                $("#btn1").css("color", "white");
+                $("#btn2").css("color", "white");
+                $("#btn3").css("color", "white");
+                $("#btn4").css("color", "orange");
+                $(".lunch").hide();
+                $(".dinner").hide();
+                $(".drink").hide();
+                $(".dessert").show();
+
+            });
+        });
+    </script>
+    <section id="menu">
+        <div class="heading">
+            <h1 data-aos="fade-up">OUR<span>MENU</span></h1>
+        </div>
+        <div class="menu-item" data-aos="fade-up">
+            <button id="btn1">Lunch</button>
+            <button id="btn2">Dinner</button>
+            <button id="btn3">Drink</button>
+            <button id="btn4">Dessert</button>
+        </div>
+        <div class="container">
+            <div class="lunch">
+                <div class="lunch-item" data-aos="fade-right">
+                    <img src="./images/lunch-1.jpg" alt="">
+                    <p>Lunch-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+                <div class="lunch-item" data-aos="fade-right">
+                    <img src="./images/lunch-2.jpg" alt="">
+                    <p>Lunch-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+                <div class="lunch-item" data-aos="fade-left">
+                    <img src="./images/lunch-3.jpg" alt="">
+                    <p>Lunch-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+                <div class="lunch-item" data-aos="fade-right">
+                    <img src="./images/lunch-4.jpg" alt="">
+                    <p>Lunch-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+                <div class="lunch-item" data-aos="fade-left">
+                    <img src="./images/lunch-5.jpg" alt="">
+                    <p>Lunch-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+                <div class="lunch-item" data-aos="fade-right">
+                    <img src="./images/lunch-6.jpg" alt="">
+                    <p>Lunch-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+                <div class="lunch-item" data-aos="fade-right">
+                    <img src="./images/lunch-7.jpg" alt="">
+                    <p>Lunch-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+                <div class="lunch-item" data-aos="fade-left">
+                    <img src="./images/lunch-8.jpg" alt="">
+                    <p>Lunch-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+            </div>
+            <div class="dinner">
+                <div class="lunch-item" data-aos="fade-right">
+                    <img src="./images/diiner-1.jpg" alt="">
+                    <p>Dinner-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+                <div class="lunch-item" data-aos="fade-left">
+                    <img src="./images/dinner-2.jpg" alt="">
+                    <p>Dinner-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+                <div class="lunch-item" data-aos="fade-right">
+                    <img src="./images/dinner-3.jpg" alt="">
+                    <p>Dinner-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+                <div class="lunch-item" data-aos="fade-left">
+                    <img src="./images/dinner-5.jpg" alt="">
+                    <p>Dinner-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+                <div class="lunch-item" data-aos="fade-right">
+                    <img src="./images/dinner-6.jpg" alt="">
+                    <p>Dinner-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+
+
+            </div>
+            <div class="drink">
+                <div class="lunch-item" data-aos="fade-right">
+                    <img src="./images/drink-1.jpg" alt="">
+                    <p>drink-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+                <div class="lunch-item" data-aos="fade-left">
+                    <img src="./images/drink-2.jpg" alt="">
+                    <p>drink-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+                <div class="lunch-item" data-aos="fade-right">
+                    <img src="./images/drink-3.jpg" alt="">
+                    <p>drink-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+                <div class="lunch-item" data-aos="fade-left">
+                    <img src="./images/drink-4.jpg" alt="">
+                    <p>drink-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+                <div class="lunch-item" data-aos="fade-right">
+                    <img src="./images/drink-5.jpg" alt="">
+                    <p>drink-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+            </div>
+            <div class="dessert">
+                <div class="lunch-item" data-aos="fade-right">
+                    <img src="./images/dessert-1.jpg" alt="">
+                    <p>dessert-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+                <div class="lunch-item" data-aos="fade-left">
+                    <img src="./images/dessert-2.jpg" alt="">
+                    <p>dessert-Item</p>
+                    <p><span>200</span><em>Rs</em> </p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- menu section end from here  -->
+
+    <!-- our chef section start from here  -->
+
+    <section id="chef">
+        <div class="heading">
+            <h1 data-aos="fade-up">OUR<span>Chef`S</span></h1>
+        </div>
+        <div class="container">
+            <div class="chef-item" data-aos="flip-left" >
+                <div class="image">
+                    <img src="./images/chef-1.jpg" alt="">
+                </div>
+                <div class="identity">
+                    <h2>Mr. Roy jan</h2>
+                    <p>Head Chef</p>
+                </div>
+            </div>
+            <div class="chef-item" data-aos="flip-right">
+                <div class="image">
+                    <img src="./images/chef-2.jpg" alt="">
+                </div>
+                <div class="identity">
+                    <h2>Mr. Rock Star</h2>
+                    <p>Head Chef</p>
+                </div>
+            </div>
+            <div class="chef-item" data-aos="flip-left">
+                <div class="image"> 
+                    <img src="./images/chef-3.jpg" alt="">
+                </div>
+                <div class="identity">
+                    <h2>Mr. Ray Chand</h2>
+                    <p>Head Chef</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our chef section end from here  -->
+
+
+    <!-- some feedback section start here  -->
+
+    <section id="feedback">
+        <div class="heading">
+            <h1 data-aos="fade-up">SOME<span>FEEDBACK</span></h1>
+        </div>
+
+        <div class="feedback-container">
+            <div class="feedback-item" data-aos="flip-left">
+
+                <div class="feed-1">
+                    <div>
+                        <h2>Rahul Patel</h2>
+                        <p>Good One</p>
+
+                    </div>
+                    <div>
+                        <img src="./images/review-1.png" alt="">
+                    </div>
+                </div>
+
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptates a architecto distinctio nam.
+                        Expedita, ex. Culpa iste vero nulla, expedita autem beatae ex odit eveniet cum numquam nihil explicabo.
+                        </p> 
+
+
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-alt"></i>
+
+                </div>
+            
+        </div>
+        <div class="feedback-item" data-aos="flip-right">
+
+            <div class="feed-1">
+                <div >
+                    <h2>N. Chouhan</h2>
+                    <p>Good One</p>
+
+                </div>
+                <div>
+                    <img src="./images/review-2.jpg" alt="">
+                </div>
+            </div>
+
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptates a architecto distinctio nam.
+                    Expedita, ex. Culpa iste vero nulla, expedita autem beatae ex odit eveniet cum numquam nihil explicabo.
+                    </p> 
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+                    
+            </div>
+        </div>
+        <div class="feedback-item" data-aos="flip-left">
+
+            <div class="feed-1">
+                <div>
+                    <h2>Rani</h2>
+                    <p>Good One</p>
+
+                </div>
+                <div>
+                    <img src="./images/review-3.png" alt="">
+                </div>
+            </div>
+
+            <div>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptates a architecto distinctio nam.
+                Expedita, ex. Culpa iste vero nulla, expedita autem beatae ex odit eveniet cum numquam nihil explicabo.
+                </p> 
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+                
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <!-- some feedback section end here  -->
+
+<!-- contact us section start from here  -->
+
+<section id="contact">
+
+    <div class="heading">
+        <h1 data-aos="fade-up">Contact<span>US</span></h1>
+    </div>
+    <div class="container">
+        <div class="contact-item" data-aos="fade-left">
+            <img src="./images/contact-us.jpg" alt="">
+        </div>
+        <div class="contact-item" data-aos="fade-right">
+            <form action="">
+                <div><span class="fa fa-user"></span><input type="text" id="name" placeholder="Enter Your Name Here"></div>
+                <div><span class="fa fa-envelope"></span><input type="email" name="email" id="email" placeholder="Enter Your Email Here"></div>
+                <div><span class="fa fa-phone"></span>  <input type="number" name="number" id="number" placeholder="Enter Your Number Here"></div>
+                <textarea name="" id="message" cols="20" rows="10" placeholder="Enter Your Message Here"></textarea><br>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- contact us section end from here  -->
+<!-- foote section start from here  -->
+<footer>
+    <div class="footer-item">
+        <h3>Our Location</h3>
+        <p>xyz,sector-12</p>
+        <p>indore-12***</p>
+    </div>
+    <div class="footer-item">
+        <h3>Opening Hour`s</h3>
+        <p>Monday To Sunday</p>
+        <p>7<i>am</i> To 7<i>pm</i></p>
+    </div>
+    <div class="footer-item">
+        <h3>Contact Us</h3>
+       <p><span>Number:-</span>+911234567890</p>
+       <p><span>Email:-</span>MyResturant123@gmail.com</p>
+    </div>
+</footer>
+<!-- foote section end from here  -->
+
+
+    <!-- aos cdn link  -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 300,
+            duration: 800
+        });
+    </script>
+
+    <!-- swiper api cdn link  -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!--js file is here  -->
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>
