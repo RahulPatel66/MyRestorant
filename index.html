@@ -19,11 +19,10 @@
     <!-- jquery cdn link  -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
-       .important{
-        background-color: blue;
-        color: white;
-     }
-    
+        .important {
+            background-color: blue;
+            color: white;
+        }
     </style>
 
 </head>
@@ -31,88 +30,82 @@
 <body>
     <!-- navigation section start here  -->
     <script>
-        $(document).ready(function(){
+        $(document).ready(function () {
             $("#h").addClass("important");
 
-            $("#h").click(function()
-                {       
-                    $("#h").addClass("important");
-                    $("#a").removeClass("important");
-                    $("#o").removeClass("important");
-                    $("#ch").removeClass("important");
-                    $("#f").removeClass("important");
-                    $("#c").removeClass("important");
+            $("#h").click(function () {
+                $("#h").addClass("important");
+                $("#a").removeClass("important");
+                $("#o").removeClass("important");
+                $("#ch").removeClass("important");
+                $("#f").removeClass("important");
+                $("#c").removeClass("important");
 
-                });
-             $("#a").click(function()
-            {       
-                    $("#a").addClass("important");
-                    $("#h").removeClass("important");
-                    $("#o").removeClass("important");
-                    $("#ch").removeClass("important");
-                    $("#f").removeClass("important");
-                    $("#c").removeClass("important");
-                });
-                $("#o").click(function()
-            {       
-                    $("#a").removeClass("important");
-                    $("#h").removeClass("important");
-                    $("#o").addClass("important");
-                    $("#ch").removeClass("important");
-                    $("#f").removeClass("important");
-                    $("#c").removeClass("important");
-                });
-                $("#ch").click(function()
-                 {       
-                    $("#a").removeClass("important");
-                    $("#h").removeClass("important");
-                    $("#o").removeClass("important");
-                    $("#ch").addClass("important");
-                    $("#f").removeClass("important");
-                    $("#c").removeClass("important");
-                });
-                $("#f").click(function()
-                 {       
-                    $("#a").removeClass("important");
-                    $("#h").removeClass("important");
-                    $("#o").removeClass("important");
-                    $("#ch").removeClass("important");
-                    $("#f").addClass("important");
-                    $("#c").removeClass("important");
-                });
-                $("#c").click(function()
-                 {       
-                    $("#a").removeClass("important");
-                    $("#h").removeClass("important");
-                    $("#o").removeClass("important");
-                    $("#ch").removeClass("important");
-                    $("#f").removeClass("important");
-                    $("#c").addClass("important");
-                });
+            });
+            $("#a").click(function () {
+                $("#a").addClass("important");
+                $("#h").removeClass("important");
+                $("#o").removeClass("important");
+                $("#ch").removeClass("important");
+                $("#f").removeClass("important");
+                $("#c").removeClass("important");
+            });
+            $("#o").click(function () {
+                $("#a").removeClass("important");
+                $("#h").removeClass("important");
+                $("#o").addClass("important");
+                $("#ch").removeClass("important");
+                $("#f").removeClass("important");
+                $("#c").removeClass("important");
+            });
+            $("#ch").click(function () {
+                $("#a").removeClass("important");
+                $("#h").removeClass("important");
+                $("#o").removeClass("important");
+                $("#ch").addClass("important");
+                $("#f").removeClass("important");
+                $("#c").removeClass("important");
+            });
+            $("#f").click(function () {
+                $("#a").removeClass("important");
+                $("#h").removeClass("important");
+                $("#o").removeClass("important");
+                $("#ch").removeClass("important");
+                $("#f").addClass("important");
+                $("#c").removeClass("important");
+            });
+            $("#c").click(function () {
+                $("#a").removeClass("important");
+                $("#h").removeClass("important");
+                $("#o").removeClass("important");
+                $("#ch").removeClass("important");
+                $("#f").removeClass("important");
+                $("#c").addClass("important");
+            });
         });
     </script>
-    
-        <div id="navigation">
-            <div class="nav-item1">
-                <a href="#"><i class="fas fa-utensils"></i><span>M</span>y Resturant</a>
-            </div>
-            <div class="nav-item2" id="nav-item2">
-                <i class="fa fa-close" id="close"></i>
-                <div><a href="#home" id="h">Home</a></div>
-                <div><a href="#about" id="a">About</a></div>
-                <div><a href="#menu" id="o">Our-Menu</a></div>
-                <div><a href="#chef" id="ch">Our-Chefs</a></div>
-                <div><a href="#feedback" id="f">FeedBack</a></div>
-                <div><a href="#contact" id="c">Contact</a></div>
-            </div>
-            <div class="nav-item3">
-                <div><i class="fa fa-search" id="search-btn"></i></div>
-                <div><i class="fa fa-bars" id="menu-btn"></i></div>
-            </div>
+
+    <div id="navigation">
+        <div class="nav-item1">
+            <a href="#"><i class="fas fa-utensils"></i><span>M</span>y Resturant</a>
         </div>
-   
-   
-   
+        <div class="nav-item2" id="nav-item2">
+            <i class="fa fa-close" id="close"></i>
+            <div><a href="#home" id="h">Home</a></div>
+            <div><a href="#about" id="a">About</a></div>
+            <div><a href="#menu" id="o">Our-Menu</a></div>
+            <div><a href="#chef" id="ch">Our-Chefs</a></div>
+            <div><a href="#feedback" id="f">FeedBack</a></div>
+            <div><a href="#contact" id="c">Contact</a></div>
+        </div>
+        <div class="nav-item3">
+            <div><i class="fa fa-search" id="search-btn"></i></div>
+            <div><i class="fa fa-bars" id="menu-btn"></i></div>
+        </div>
+    </div>
+
+
+
     <!-- navigation section end here  -->
 
     <!-- search section start here  -->
@@ -146,8 +139,8 @@
             <div class="swiper-pagination"></div>
 
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev" id="btn"></div>
-            <div class="swiper-button-next" id="btn"></div>
+            <!-- <div class="swiper-button-prev" id="btn"></div>
+            <div class="swiper-button-next" id="btn"></div> -->
 
             <!-- If we need scrollbar
             <div class="swiper-scrollbar"></div> -->
@@ -177,7 +170,7 @@
             <div class="vid" data-aos="fade-right">
 
                 <!-- <video src="./images/resturant-video.mp4" width="90%" height="30rem"  autoplay loop4> -->
-                <video width="90%" height="30rem" autoplay loop>
+                <video  autoplay loop>
                     <source src="./images/resturant-video.mp4" type="video/mp4">
                     <source src="./images/resturant-video.ogg" type="video/ogg">
                     Your browser does not support the video tag.
@@ -260,7 +253,7 @@
             <button id="btn4">Dessert</button>
         </div>
         <div class="container">
-            <div class="lunch">
+            <div class="lunch" id="menu-type">
                 <div class="lunch-item" data-aos="fade-right">
                     <img src="./images/lunch-1.jpg" alt="">
                     <p>Lunch-Item</p>
@@ -302,7 +295,7 @@
                     <p><span>200</span><em>Rs</em> </p>
                 </div>
             </div>
-            <div class="dinner">
+            <div class="dinner" id="menu-type">
                 <div class="lunch-item" data-aos="fade-right">
                     <img src="./images/diiner-1.jpg" alt="">
                     <p>Dinner-Item</p>
@@ -331,7 +324,7 @@
 
 
             </div>
-            <div class="drink">
+            <div class="drink" id="menu-type">
                 <div class="lunch-item" data-aos="fade-right">
                     <img src="./images/drink-1.jpg" alt="">
                     <p>drink-Item</p>
@@ -358,7 +351,7 @@
                     <p><span>200</span><em>Rs</em> </p>
                 </div>
             </div>
-            <div class="dessert">
+            <div class="dessert" id="menu-type">
                 <div class="lunch-item" data-aos="fade-right">
                     <img src="./images/dessert-1.jpg" alt="">
                     <p>dessert-Item</p>
@@ -383,7 +376,7 @@
             <h1 data-aos="fade-up">OUR<span>Chef`S</span></h1>
         </div>
         <div class="container">
-            <div class="chef-item" data-aos="flip-left" >
+            <div class="chef-item" data-aos="flip-left">
                 <div class="image">
                     <img src="./images/chef-1.jpg" alt="">
                 </div>
@@ -402,7 +395,7 @@
                 </div>
             </div>
             <div class="chef-item" data-aos="flip-left">
-                <div class="image"> 
+                <div class="image">
                     <img src="./images/chef-3.jpg" alt="">
                 </div>
                 <div class="identity">
@@ -438,124 +431,134 @@
                 </div>
 
                 <div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptates a architecto distinctio nam.
-                        Expedita, ex. Culpa iste vero nulla, expedita autem beatae ex odit eveniet cum numquam nihil explicabo.
-                        </p> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptates a architecto distinctio
+                        nam.
+                        Expedita, ex. Culpa iste vero nulla, expedita autem beatae ex odit eveniet cum numquam nihil
+                        explicabo.
+                    </p>
 
 
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star-half-alt"></i>
-
-                </div>
-            
-        </div>
-        <div class="feedback-item" data-aos="flip-right">
-
-            <div class="feed-1">
-                <div >
-                    <h2>N. Chouhan</h2>
-                    <p>Good One</p>
-
-                </div>
-                <div>
-                    <img src="./images/review-2.jpg" alt="">
-                </div>
-            </div>
-
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptates a architecto distinctio nam.
-                    Expedita, ex. Culpa iste vero nulla, expedita autem beatae ex odit eveniet cum numquam nihil explicabo.
-                    </p> 
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star-half-alt"></i>
-                    
-            </div>
-        </div>
-        <div class="feedback-item" data-aos="flip-left">
-
-            <div class="feed-1">
-                <div>
-                    <h2>Rani</h2>
-                    <p>Good One</p>
 
                 </div>
+
+            </div>
+            <div class="feedback-item" data-aos="flip-right">
+
+                <div class="feed-1">
+                    <div>
+                        <h2>N. Chouhan</h2>
+                        <p>Good One</p>
+
+                    </div>
+                    <div>
+                        <img src="./images/review-2.jpg" alt="">
+                    </div>
+                </div>
+
                 <div>
-                    <img src="./images/review-3.png" alt="">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptates a architecto distinctio
+                        nam.
+                        Expedita, ex. Culpa iste vero nulla, expedita autem beatae ex odit eveniet cum numquam nihil
+                        explicabo.
+                    </p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+
                 </div>
             </div>
+            <div class="feedback-item" data-aos="flip-left">
 
-            <div>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptates a architecto distinctio nam.
-                Expedita, ex. Culpa iste vero nulla, expedita autem beatae ex odit eveniet cum numquam nihil explicabo.
-                </p> 
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half-alt"></i>
-                
+                <div class="feed-1">
+                    <div>
+                        <h2>Rani Patel</h2>
+                        <p>Good One</p>
+
+                    </div>
+                    <div>
+                        <img src="./images/review-3.png" alt="">
+                    </div>
+                </div>
+
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At voluptates a architecto distinctio
+                        nam.
+                        Expedita, ex. Culpa iste vero nulla, expedita autem beatae ex odit eveniet cum numquam nihil
+                        explicabo.
+                    </p>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-alt"></i>
+
+                </div>
+
             </div>
-
-        </div>
         </div>
     </section>
 
     <!-- some feedback section end here  -->
 
-<!-- contact us section start from here  -->
+    <!-- contact us section start from here  -->
 
-<section id="contact">
+    <section id="contact">
 
-    <div class="heading">
-        <h1 data-aos="fade-up">Contact<span>US</span></h1>
-    </div>
-    <div class="container">
-        <div class="contact-item" data-aos="fade-left">
-            <img src="./images/contact-us.jpg" alt="">
+        <div class="heading">
+            <h1 data-aos="fade-up">Contact<span>US</span></h1>
         </div>
-        <div class="contact-item" data-aos="fade-right">
-            <form action="">
-                <div><span class="fa fa-user"></span><input type="text" id="name" placeholder="Enter Your Name Here"></div>
-                <div><span class="fa fa-envelope"></span><input type="email" name="email" id="email" placeholder="Enter Your Email Here"></div>
-                <div><span class="fa fa-phone"></span>  <input type="number" name="number" id="number" placeholder="Enter Your Number Here"></div>
-                <textarea name="" id="message" cols="20" rows="10" placeholder="Enter Your Message Here"></textarea><br>
-                <button>Submit</button>
-            </form>
+        <div class="container">
+            <div class="contact-item" data-aos="fade-left">
+                <img src="./images/contact-us.jpg" alt="">
+            </div>
+            <div class="contact-item" data-aos="fade-right">
+                <form action="">
+                    <div><span class="fa fa-user"></span><input type="text" id="name"
+                            placeholder="Enter Your Name Here"></div>
+                    <div><span class="fa fa-envelope"></span><input type="email" name="email" id="email"
+                            placeholder="Enter Your Email Here"></div>
+                    <div><span class="fa fa-phone"></span> <input type="number" name="number" id="number"
+                            placeholder="Enter Your Number Here"></div>
+                    <textarea name="" id="message" cols="20" rows="10"
+                        placeholder="Enter Your Message Here"></textarea><br>
+                    <button>Submit</button>
+                </form>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
-<!-- contact us section end from here  -->
-<!-- foote section start from here  -->
-<footer>
-    <div class="footer-item">
-        <h3>Our Location</h3>
-        <p>xyz,sector-12</p>
-        <p>indore-12***</p>
-    </div>
-    <div class="footer-item">
-        <h3>Opening Hour`s</h3>
-        <p>Monday To Sunday</p>
-        <p>7<i>am</i> To 7<i>pm</i></p>
-    </div>
-    <div class="footer-item">
-        <h3>Contact Us</h3>
-       <p><span>Number:-</span>+911234567890</p>
-       <p><span>Email:-</span>MyResturant123@gmail.com</p>
-    </div>
-</footer>
-<section id="detail">
-   <p >Created By <span>Mr. R.J.Patel</span></p> 
-</section>
-<!-- foote section end from here  -->
+    <!-- contact us section end from here  -->
+    <!-- foote section start from here  -->
+    <footer>
+        <div class="footer-item">
+            <h3>Our Location</h3>
+            <p>xyz,sector-12</p>
+            <p>indore-12***</p>
+        </div>
+        <div class="footer-item">
+            <h3>Opening Hour`s</h3>
+            <p>Monday To Sunday</p>
+            <p>7<i>am</i> To 7<i>pm</i></p>
+        </div>
+        <div class="footer-item">
+            <h3>Contact Us</h3>
+            <p><span>Number:-</span>+911234567890</p>
+            <p><span>Email:-</span>MyResturant123@gmail.com</p>
+        </div>
+    </footer>
+    <section id="detail">
+        <p>Created By <span>Mr. R.J.Patel</span></p>
+    </section>
+    <!-- foote section end from here  -->
 
 
     <!-- aos cdn link  -->
